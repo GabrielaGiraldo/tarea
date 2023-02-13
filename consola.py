@@ -1,5 +1,16 @@
 from funciones import *
 def menu(biblio):
+    """
+    Esta funcion contiene el menu o consola de controles del programa-
+      (Se importan las funciones de otro archivo)
+    
+    PARAMETROS:
+
+    - while: el ciclo while se encarga de ejecutar la funcion repetidamente hasta que el usuario de un pare.
+    - selec: es una variable input que le permite al usuario decidir que acción se va a ejecutar.
+    - match case: cada caso dentro del matchcase corresponde a una de las opciones dentro del menu,
+      dependiendo del numero selecionado se va a ejecutar un "case", que a su vez contiene una funcion con la acción determinada. 
+    """
     condicion = True
     while condicion:
         print(
