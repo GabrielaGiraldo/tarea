@@ -20,7 +20,7 @@ def eliminar(
      if x == "si":
          nom = str(input("Que usuario desea eliminar: "))
          nom = nom.lower()
-         dicc.pop(nom)
+         del dicc[nom]
          
      else:
          print("No se desea eliminar ningun usuario")

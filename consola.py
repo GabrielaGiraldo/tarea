@@ -13,15 +13,16 @@ def menu(biblio):
     """
     )
         selec = str(input("Que desea visualizar: "))
-        
-        if selec == "1":
+        match selec:
+            
+         case "1":
             print(añadir(biblio))
-        if selec == "2":
+         case "2":
             print(cambiar(biblio))
-        if selec == "3":
+         case "3":
             print(eliminar(biblio))
-        if selec == "4":
+         case "4":
             print(ver(biblio))
-        if selec == "x":
+         case "x":
             print("salio de la biblioteca")
             break
