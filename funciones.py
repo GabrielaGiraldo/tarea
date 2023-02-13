@@ -91,10 +91,9 @@ def ver(
        desea ejecutar.
     if x == "si": Es el condicional que dependiendo de la respuesta del usuario va a ejecutar 
         el resto del programa (Ver la información contenida en el diccionario)
-        ant: es una variable que pregunta a que usuario desea modificar.
-        nom:lib = En este caso "nom" y "lib" equivalen a la información añadida (lo nuevo)
-        g.pop(): elimina la información vieja
-        g.update(): se usa para añadir la información que se desea cambiar (nombre y libro)  
+        for i in g.items():
+            El ciclo for se encarga de recorrer el diccionario y junto al print (print(i)) muestra
+            el contenido del diccionario en pantalla.
     else: si la respuesta del usuario en "x" es diferente a "si", el else se ejecuta para repetir el ciclo
     """
     x = str(input("Desea ver un usuario? (si/no) "))

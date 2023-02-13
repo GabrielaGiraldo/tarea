@@ -23,7 +23,7 @@ def menu(biblio):
     
     """
     )
-        selec = str(input("Que desea visualizar: "))
+        selec = str(input("A que opción desea acceder: "))
         match selec:
             
          case "1":
